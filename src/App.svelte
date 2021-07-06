@@ -15,6 +15,9 @@
 
 <div class="container">
     <div>
-        <Card />
+        <Card image="https://via.placeholder.com/320x180/" link="https://google.com" linkTitle="Link">
+            <h3 slot="title">Title</h3>
+            <p slot="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, ratione!</p>
+        </Card>
     </div>
 </div>

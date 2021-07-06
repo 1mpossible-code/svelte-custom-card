@@ -1,13 +1,28 @@
 <div class="container">
     <div class="image">
-        <img src="https://via.placeholder.com/320x180/" alt="320x180">
+        <img src={image} alt="320x180">
     </div>
     <div class="under-image">
         <div class="title">
-            <h3>Lorem ipsum dolor sit amet.</h3>
+            <slot name="title">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+            </slot>
         </div>
         <div class="description">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam aspernatur culpa dicta dolores et explicabo itaque iure, nisi non numquam omnis, perferendis recusandae sapiente tempore ut voluptatibus! Obcaecati, tempore.</p>
+            <slot name="description">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam aspernatur culpa dicta dolores
+                    et
+                    explicabo itaque iure, nisi non numquam omnis, perferendis recusandae sapiente tempore ut
+                    voluptatibus!
+                    Obcaecati, tempore.</p>
+            </slot>
+        </div>
+        <div class="link">
+            {#if link}
+                <a href={link}>{linkTitle}</a>
+            {:else}
+                <slot name="link"/>
+            {/if}
         </div>
     </div>
 </div>
@@ -29,10 +44,6 @@
         padding: 1rem;
     }
 
-    h3 {
-        margin-left: auto;
-    }
-    
     .title {
         text-align: center;
     }
@@ -40,8 +51,30 @@
     .description {
         text-align: justify;
     }
+
+    .link {
+        display: flex;
+        justify-content: center;
+    }
+
+    .link > a {
+        padding: 7px 20px;
+        text-decoration: none;
+        border: 1px solid silver;
+        border-radius: 10px;
+        color: white;
+        background-color: darkcyan;
+        transition: .3s;
+    }
+
+    .link > a:hover {
+        filter: brightness(110%);
+        transform: scale(1.1);
+    }
 </style>
 
 <script>
-    let name = 'world'
+    export let link;
+    export let linkTitle = "Link";
+    export let image;
 </script>

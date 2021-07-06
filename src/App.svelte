@@ -1,5 +1,5 @@
 <script>
-	let name = '<8@';
+    let name = 'world'
 </script>
 
-<h1>@825B, {name}!</h1>
+<h1>Hello, {name}!</h1>

@@ -1,10 +1,14 @@
 <div class="container">
-    <img src="https://via.placeholder.com/320x180/" alt="320x180">
-    <div>
-        <h3>Title</h3>
+    <div class="image">
+        <img src="https://via.placeholder.com/320x180/" alt="320x180">
     </div>
-    <div class="description">
-        <p>Description</p>
+    <div class="under-image">
+        <div class="title">
+            <h3>Lorem ipsum dolor sit amet.</h3>
+        </div>
+        <div class="description">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam aspernatur culpa dicta dolores et explicabo itaque iure, nisi non numquam omnis, perferendis recusandae sapiente tempore ut voluptatibus! Obcaecati, tempore.</p>
+        </div>
     </div>
 </div>
 
@@ -14,6 +18,27 @@
         width: 100%;
         border-radius: 25px;
         overflow: hidden;
+    }
+
+    img {
+        width: 100%;
+        border-bottom: 1px solid silver;
+    }
+
+    .under-image {
+        padding: 1rem;
+    }
+
+    h3 {
+        margin-left: auto;
+    }
+    
+    .title {
+        text-align: center;
+    }
+
+    .description {
+        text-align: justify;
     }
 </style>
 

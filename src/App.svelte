@@ -1,5 +1,7 @@
 <script>
-    let name = 'world'
+    import Card from './Card.svelte'
 </script>
 
-<h1>Hello, {name}!</h1>
+<div>
+    <Card />
+</div>

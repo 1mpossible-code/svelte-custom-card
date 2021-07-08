@@ -18,6 +18,8 @@ Customizable and minimalistic svelte Card component.
 Svelte Custom Card is a project that implements the most simple, flexible, customizable, light and minimalistic card
 component with [Svelte](https://svelte.dev/).
 
+![](assets/image.png)
+
 ## Installation
 
 * To use [Card](https://github.com/1mpossible-code/svelte-custom-card/blob/master/src/Card.svelte) in your component

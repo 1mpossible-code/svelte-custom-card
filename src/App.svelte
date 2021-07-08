@@ -7,6 +7,8 @@
         width: 100%;
         display: flex;
         justify-content: center;
+        height: 100%;
+        align-items: center;
     }
     .container > div {
         width: calc(97% / 3);
@@ -30,14 +32,16 @@
 
 <div class="container">
     <div>
-        <Card image="https://via.placeholder.com/320x180/" link="https://google.com" linkTitle="Link">
-            <h3 slot="title">Title</h3>
+        <!-- Card 1 -->
+        <Card image="https://via.placeholder.com/2560x1440/" link="https://google.com" linkTitle="Link">
+            <h3 slot="title">Card 1</h3>
             <p slot="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, ratione!</p>
         </Card>
     </div>
     <div>
-        <Card image="https://via.placeholder.com/320x180/">
-            <h3 slot="title">Title 2</h3>
+        <!-- Card 2 -->
+        <Card image="https://via.placeholder.com/1920x1080/">
+            <h3 slot="title">Card 2</h3>
             <p slot="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, ratione!</p>
             <a slot="link" href="https://google.com">Link</a>
         </Card>
